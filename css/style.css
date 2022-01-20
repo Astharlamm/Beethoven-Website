@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap');
+
+header{
+    width: 100%;
+    background-color: #000000;
+    height: 80px;
+}
+
+.container{
+    width: 80%;
+    margin: 0px auto;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.logo{
+    display: inline-block;
+
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+    margin-top: 25px;
+
+}
+
+.menu{
+    display: inline-block;
+    margin-left: 20em;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu ul a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0px 10px;
+    line-height: 80px;
+    letter-spacing: 0px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul li a:hover{
+    background-color: #8da751;
+    display: block;
+    color:#fff;
+    transition: 1s ease;
+}
+
+.redes_sociales{
+    display: inline-block;
+}
+.redes_sociales ul li{
+    display: inline-block;
+    list-style: none;
+}
+.redes_sociales img{
+    width: 21px;
+    height: auto;
+    margin-top: 30px;
+    padding: 0px 2px;
+}
+
+/*Hero section*/
+.banner{
+    background-image:url("../images/barroco-2.jpg");
+    background-size:cover;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+} 
+.banner::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.banner-content ,h1,p{
+    z-index: 1;
+}
+
+.banner-content{
+    color: #ffffff;
+    width: 55%;
+    padding-top: 14%;
+}
+
+.banner-content span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.banner-content h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.banner-content p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}   
+
+.banner-content a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.banner-content .btn-one{
+    padding: 10px 30px;
+    background-color: #0000004d;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+}
+
+.banner-content .btn-one:hover{
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.banner-content .btn-two{
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 2px solid #0000004d;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: #000000;
+}
+
+
+.banner-content .btn-two:hover{
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+
+/*Music section*/
+.music{
+    display: flex;
+    background: linear-gradient(rgba(5, 7, 12, 0.85), rgba(5, 7, 12, 0.85)), url("../images/subsection.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 2% 5%;
+}
+
+
+.album1, .album2, .album3{
+    display: flex;
+}
+
+.imagen_parrafo img{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.rotar:hover{
+    -webkit-transform: rotate(360deg);
+    transition: 2s ease-in-out;
+}
+
+.texto_parrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/*Galeria section*/
+.museos{
+    background-color: #eee; 
+    padding-bottom: 8.5%;
+}
+.titulos{
+    padding-top: 4%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-style: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; 
+}
+.titulos span{
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+}
+.galeria{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+.foto {
+    width: 32%;
+    position: relative;
+    height: 200px;
+    margin-bottom: 6%;
+    box-shadow: 0px 15px 28px rgba(0, 0, 0, .75);
+}    
+
+.imagen img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* Aprender Seccion */
+
+.pantalla-izquierda{
+    background: #f0bd08;
+    height: 100vh;
+    width: 50%;
+}
+
+.pantalla-izquierda h1{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    margin-top: 50px;
+
+}
+
+.pantalla-izquierda p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 500;
+    width: 50%;
+    margin-left: 140px;
+}
+
+.pantalla-izquierda a{
+    text-decoration: none;
+    padding: 20px;
+    border: 3px solid #fff;   
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+.pantalla-derecha{
+    background: linear-gradient(rgba(5, 7, 12, 0.45), rgba(5, 7, 12, 0.45)), url(../images/cultural.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.pantalla-dividida{
+    display: flex;
+}
+
+.creative-tittle{
+    color: #fff;
+
+}
+
+
